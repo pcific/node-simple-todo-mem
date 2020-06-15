@@ -1,0 +1,15 @@
+{
+  "name": "node-simple-todo-mem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug" : "nodemon --inspect=0.0.0.0:9229 --ignore node_modules --watch index.js -- myargs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}

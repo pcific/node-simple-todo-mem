@@ -1,0 +1,8 @@
+
+curl -s localhost:5000/todos | jq . 
+curl -s localhost:5000/todos/1 | jq . 
+curl -X POST -i -s -H 'Content-Type: application/json' -d '{"name": "New Todo" }' localhost:5000/todos/new
+curl -X PUT -i -s -H 'Content-Type: application/json' -d '{"id": 1, "name": "Go Fast to the post office", "date": "2020-06-01T09:30:00.000Z" }' localhost:5000/todos/1
+curl -X DELETE -i -s localhost:5000/todos/5
+
+
